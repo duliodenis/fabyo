@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CFBB0AD1B94FD2C0011DFAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBB0AC1B94FD2C0011DFAE /* AppDelegate.swift */; };
+		6CFBB0AF1B94FD2C0011DFAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBB0AE1B94FD2C0011DFAE /* ViewController.swift */; };
+		6CFBB0B21B94FD2C0011DFAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBB0B01B94FD2C0011DFAE /* Main.storyboard */; };
+		6CFBB0B41B94FD2C0011DFAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBB0B31B94FD2C0011DFAE /* Images.xcassets */; };
+		6CFBB0B71B94FD2C0011DFAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBB0B51B94FD2C0011DFAE /* LaunchScreen.xib */; };
+		6CFBB0C31B94FD2C0011DFAE /* FabyoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBB0C21B94FD2C0011DFAE /* FabyoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CFBB0BD1B94FD2C0011DFAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CFBB09F1B94FD2C0011DFAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CFBB0A61B94FD2C0011DFAE;
+			remoteInfo = Fabyo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6CFBB0A71B94FD2C0011DFAE /* Fabyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fabyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFBB0AB1B94FD2C0011DFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFBB0AC1B94FD2C0011DFAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CFBB0AE1B94FD2C0011DFAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CFBB0B11B94FD2C0011DFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CFBB0B31B94FD2C0011DFAE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6CFBB0B61B94FD2C0011DFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6CFBB0BC1B94FD2C0011DFAE /* FabyoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FabyoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFBB0C11B94FD2C0011DFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFBB0C21B94FD2C0011DFAE /* FabyoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabyoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CFBB0A41B94FD2C0011DFAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFBB0B91B94FD2C0011DFAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CFBB09E1B94FD2C0011DFAE = {
+			isa = PBXGroup;
+			children = (
+				6CFBB0A91B94FD2C0011DFAE /* Fabyo */,
+				6CFBB0BF1B94FD2C0011DFAE /* FabyoTests */,
+				6CFBB0A81B94FD2C0011DFAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CFBB0A81B94FD2C0011DFAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBB0A71B94FD2C0011DFAE /* Fabyo.app */,
+				6CFBB0BC1B94FD2C0011DFAE /* FabyoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CFBB0A91B94FD2C0011DFAE /* Fabyo */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBB0AC1B94FD2C0011DFAE /* AppDelegate.swift */,
+				6CFBB0AE1B94FD2C0011DFAE /* ViewController.swift */,
+				6CFBB0B01B94FD2C0011DFAE /* Main.storyboard */,
+				6CFBB0B31B94FD2C0011DFAE /* Images.xcassets */,
+				6CFBB0B51B94FD2C0011DFAE /* LaunchScreen.xib */,
+				6CFBB0AA1B94FD2C0011DFAE /* Supporting Files */,
+			);
+			path = Fabyo;
+			sourceTree = "<group>";
+		};
+		6CFBB0AA1B94FD2C0011DFAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBB0AB1B94FD2C0011DFAE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CFBB0BF1B94FD2C0011DFAE /* FabyoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBB0C21B94FD2C0011DFAE /* FabyoTests.swift */,
+				6CFBB0C01B94FD2C0011DFAE /* Supporting Files */,
+			);
+			path = FabyoTests;
+			sourceTree = "<group>";
+		};
+		6CFBB0C01B94FD2C0011DFAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBB0C11B94FD2C0011DFAE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CFBB0A61B94FD2C0011DFAE /* Fabyo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CFBB0C61B94FD2C0011DFAE /* Build configuration list for PBXNativeTarget "Fabyo" */;
+			buildPhases = (
+				6CFBB0A31B94FD2C0011DFAE /* Sources */,
+				6CFBB0A41B94FD2C0011DFAE /* Frameworks */,
+				6CFBB0A51B94FD2C0011DFAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fabyo;
+			productName = Fabyo;
+			productReference = 6CFBB0A71B94FD2C0011DFAE /* Fabyo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CFBB0BB1B94FD2C0011DFAE /* FabyoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CFBB0C91B94FD2C0011DFAE /* Build configuration list for PBXNativeTarget "FabyoTests" */;
+			buildPhases = (
+				6CFBB0B81B94FD2C0011DFAE /* Sources */,
+				6CFBB0B91B94FD2C0011DFAE /* Frameworks */,
+				6CFBB0BA1B94FD2C0011DFAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CFBB0BE1B94FD2C0011DFAE /* PBXTargetDependency */,
+			);
+			name = FabyoTests;
+			productName = FabyoTests;
+			productReference = 6CFBB0BC1B94FD2C0011DFAE /* FabyoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CFBB09F1B94FD2C0011DFAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Dulio Denis";
+				TargetAttributes = {
+					6CFBB0A61B94FD2C0011DFAE = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					6CFBB0BB1B94FD2C0011DFAE = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 6CFBB0A61B94FD2C0011DFAE;
+					};
+				};
+			};
+			buildConfigurationList = 6CFBB0A21B94FD2C0011DFAE /* Build configuration list for PBXProject "Fabyo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CFBB09E1B94FD2C0011DFAE;
+			productRefGroup = 6CFBB0A81B94FD2C0011DFAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CFBB0A61B94FD2C0011DFAE /* Fabyo */,
+				6CFBB0BB1B94FD2C0011DFAE /* FabyoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CFBB0A51B94FD2C0011DFAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFBB0B21B94FD2C0011DFAE /* Main.storyboard in Resources */,
+				6CFBB0B71B94FD2C0011DFAE /* LaunchScreen.xib in Resources */,
+				6CFBB0B41B94FD2C0011DFAE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFBB0BA1B94FD2C0011DFAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CFBB0A31B94FD2C0011DFAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFBB0AF1B94FD2C0011DFAE /* ViewController.swift in Sources */,
+				6CFBB0AD1B94FD2C0011DFAE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFBB0B81B94FD2C0011DFAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFBB0C31B94FD2C0011DFAE /* FabyoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CFBB0BE1B94FD2C0011DFAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CFBB0A61B94FD2C0011DFAE /* Fabyo */;
+			targetProxy = 6CFBB0BD1B94FD2C0011DFAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CFBB0B01B94FD2C0011DFAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CFBB0B11B94FD2C0011DFAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CFBB0B51B94FD2C0011DFAE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CFBB0B61B94FD2C0011DFAE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CFBB0C41B94FD2C0011DFAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CFBB0C51B94FD2C0011DFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CFBB0C71B94FD2C0011DFAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fabyo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CFBB0C81B94FD2C0011DFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fabyo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6CFBB0CA1B94FD2C0011DFAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FabyoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fabyo.app/Fabyo";
+			};
+			name = Debug;
+		};
+		6CFBB0CB1B94FD2C0011DFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FabyoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fabyo.app/Fabyo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CFBB0A21B94FD2C0011DFAE /* Build configuration list for PBXProject "Fabyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFBB0C41B94FD2C0011DFAE /* Debug */,
+				6CFBB0C51B94FD2C0011DFAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CFBB0C61B94FD2C0011DFAE /* Build configuration list for PBXNativeTarget "Fabyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFBB0C71B94FD2C0011DFAE /* Debug */,
+				6CFBB0C81B94FD2C0011DFAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CFBB0C91B94FD2C0011DFAE /* Build configuration list for PBXNativeTarget "FabyoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFBB0CA1B94FD2C0011DFAE /* Debug */,
+				6CFBB0CB1B94FD2C0011DFAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CFBB09F1B94FD2C0011DFAE /* Project object */;
+}
