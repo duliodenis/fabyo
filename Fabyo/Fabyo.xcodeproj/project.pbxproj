@@ -13,6 +13,7 @@
 		6CFBB0B41B94FD2C0011DFAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBB0B31B94FD2C0011DFAE /* Images.xcassets */; };
 		6CFBB0B71B94FD2C0011DFAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBB0B51B94FD2C0011DFAE /* LaunchScreen.xib */; };
 		6CFBB0C31B94FD2C0011DFAE /* FabyoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBB0C21B94FD2C0011DFAE /* FabyoTests.swift */; };
+		6CFBB0CE1B9511E40011DFAE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBB0CD1B9511E40011DFAE /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6CFBB0BC1B94FD2C0011DFAE /* FabyoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FabyoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFBB0C11B94FD2C0011DFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CFBB0C21B94FD2C0011DFAE /* FabyoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabyoTests.swift; sourceTree = "<group>"; };
+		6CFBB0CD1B9511E40011DFAE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Frameworks/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				6CFBB0B01B94FD2C0011DFAE /* Main.storyboard */,
 				6CFBB0B31B94FD2C0011DFAE /* Images.xcassets */,
 				6CFBB0B51B94FD2C0011DFAE /* LaunchScreen.xib */,
+				6CFBB0CC1B9511A60011DFAE /* Frameworks */,
 				6CFBB0AA1B94FD2C0011DFAE /* Supporting Files */,
 			);
 			path = Fabyo;
@@ -110,6 +113,14 @@
 				6CFBB0C11B94FD2C0011DFAE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CFBB0CC1B9511A60011DFAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CFBB0CD1B9511E40011DFAE /* SwiftyJSON.swift */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFBB0CE1B9511E40011DFAE /* SwiftyJSON.swift in Sources */,
 				6CFBB0AF1B94FD2C0011DFAE /* ViewController.swift in Sources */,
 				6CFBB0AD1B94FD2C0011DFAE /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +421,7 @@
 				6CFBB0C81B94FD2C0011DFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CFBB0C91B94FD2C0011DFAE /* Build configuration list for PBXNativeTarget "FabyoTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				6CFBB0CB1B94FD2C0011DFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
