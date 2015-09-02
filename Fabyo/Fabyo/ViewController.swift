@@ -14,6 +14,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var library: JSON = JSON.nullJSON
     
+    let textCellIdentifier = "Cell"
+    let bookSegueIdentifier = "BookView"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -65,7 +68,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
         
         let row = indexPath.row
         if let bookName = library["books"][row]["title"].string as String! {
@@ -79,6 +82,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         return cell
+    }
+    
+    // MARK: - Navigation Control
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == bookSegueIdentifier {
+            if let bookVC: BookViewController = segue.destinationViewController as? BookViewController {
+                if let bookIndex = tableView.indexPathForSelectedRow()?.row {
+                    bookVC.book.title = library["books"][bookIndex]["title"].string
+                    let description = library["books"][bookIndex]["description"].string
+                    let cleanDescription = description!.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
+                    bookVC.book.description = cleanDescription
+                }
+            }
+        }
     }
 
 }

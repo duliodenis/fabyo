@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C5FFAF31B95E98F00941FA3 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5FFAF21B95E98F00941FA3 /* BookViewController.swift */; };
+		6C5FFAF71B95EC0300941FA3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5FFAF61B95EC0300941FA3 /* Book.swift */; };
 		6CFBB0AD1B94FD2C0011DFAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBB0AC1B94FD2C0011DFAE /* AppDelegate.swift */; };
 		6CFBB0AF1B94FD2C0011DFAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBB0AE1B94FD2C0011DFAE /* ViewController.swift */; };
 		6CFBB0B21B94FD2C0011DFAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFBB0B01B94FD2C0011DFAE /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C5FFAF21B95E98F00941FA3 /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		6C5FFAF61B95EC0300941FA3 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		6CFBB0A71B94FD2C0011DFAE /* Fabyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fabyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFBB0AB1B94FD2C0011DFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CFBB0AC1B94FD2C0011DFAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 			children = (
 				6CFBB0AC1B94FD2C0011DFAE /* AppDelegate.swift */,
 				6CFBB0AE1B94FD2C0011DFAE /* ViewController.swift */,
+				6C5FFAF21B95E98F00941FA3 /* BookViewController.swift */,
+				6C5FFAF61B95EC0300941FA3 /* Book.swift */,
 				6CFBB0B01B94FD2C0011DFAE /* Main.storyboard */,
 				6CFBB0B31B94FD2C0011DFAE /* Images.xcassets */,
 				6CFBB0B51B94FD2C0011DFAE /* LaunchScreen.xib */,
@@ -224,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CFBB0CE1B9511E40011DFAE /* SwiftyJSON.swift in Sources */,
+				6C5FFAF31B95E98F00941FA3 /* BookViewController.swift in Sources */,
 				6CFBB0AF1B94FD2C0011DFAE /* ViewController.swift in Sources */,
+				6C5FFAF71B95EC0300941FA3 /* Book.swift in Sources */,
 				6CFBB0AD1B94FD2C0011DFAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
