@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
-    var library: JSON = JSON.nullJSON
+    var library: JSON = JSON.null
     
     let textCellIdentifier = "Cell"
     let bookSegueIdentifier = "BookView"
@@ -28,26 +28,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func booksLookup() {
         let urlPath = NSURL(string: "https://librivox.org/api/feed/audiobooks/?format=json")!
         
-        var session = NSURLSession.sharedSession()
-        var task = session.dataTaskWithURL(urlPath) {
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithURL(urlPath) {
             data, response, error -> Void in
             
             if ((error) != nil) {
-                print(error.localizedDescription)
+                print(error!.localizedDescription, terminator: "")
             }
             
             var jsonError : NSError?
-            var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &jsonError) as! NSDictionary
+            var jsonResult = (try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
             
             if ((jsonError) != nil) {
-                print(jsonError!.localizedDescription)
+                print(jsonError!.localizedDescription, terminator: "")
             }
             // update the UITableView on the main thread
             dispatch_async(dispatch_get_main_queue()) {
-                self.library = JSON(data: data)
+                self.library = JSON(data: data!)
                 
                 let numberOfBooks = self.library["books"].count
-                print("Results are \(numberOfBooks) books\n")
+                print("Results are \(numberOfBooks) books\n", terminator: "")
                 self.tableView.reloadData()
             }
         }
@@ -68,7 +68,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) 
         
         let row = indexPath.row
         if let bookName = library["books"][row]["title"].string as String! {
@@ -89,7 +89,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == bookSegueIdentifier {
             if let bookVC: BookViewController = segue.destinationViewController as? BookViewController {
-                if let bookIndex = tableView.indexPathForSelectedRow()?.row {
+                if let bookIndex = tableView.indexPathForSelectedRow?.row {
                     bookVC.book.title = library["books"][bookIndex]["title"].string
                     let description = library["books"][bookIndex]["description"].string
                     let cleanDescription = description!.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)

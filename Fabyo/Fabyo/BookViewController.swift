@@ -28,7 +28,7 @@ class BookViewController: UIViewController {
     
     func formatLabels() {
         // create a convenience labels array to iterate through all view labels
-        var labelsArray = [titleLabel, descriptionLabel]
+        let labelsArray = [titleLabel, descriptionLabel]
         
         // iterate through the labels to set their alignment and font
         for label in labelsArray {
